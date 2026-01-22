@@ -1,105 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Community Hub Tutoring</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #4b6cb7;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    section {
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #4b6cb7;
-    }
-    .card {
-      background: white;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-    }
-    img {
-      max-width: 150px;
-      border-radius: 50%;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 10px;
-      font-size: 14px;
-    }
-    .btn {
-      display: inline-block;
-      background: #25D366;
-      color: white;
-      padding: 10px 15px;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Community Hub Tutoring</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f9ff;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #5f9cff, #7ed6df);
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header img {
+  max-width: 180px;
+  margin-bottom: 10px;
+}
+
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+h2 {
+  color: #5f9cff;
+}
+
+.btn {
+  display: inline-block;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.subject-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.review {
+  background: #f0f6ff;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #eaf1ff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
 <header>
-  <img src="logo.png?v=2" alt="Community Hub Tutoring Logo" style="max-width:200px; display:block; margin:0 auto 15px;">
+  <img src="logo.png" alt="Community Hub Tutoring Logo">
   <h1>Community Hub Tutoring</h1>
-  <p>Helping learners grow with understanding</p>
+  <p>Helping learners grow with confidence & understanding</p>
 </header>
 
 <section class="card">
-  <h2>About the Tutor</h2>
-  <img src="katie.jpeg?v=2" alt="Tutor photo" style="max-width:150px; border-radius:50%;">
-  <p>
-    My name is Katie. I am a reliable and passionate tutor with a love for teaching and helping learners
-    understand their work. I have one year of teaching experience from working at a crèche and I am
-    currently a Sunday School teacher.
-  </p>
+<h2>👩‍🏫 About the Tutor</h2>
+<img src="katie.jpeg" style="max-width:150px;border-radius:50%;">
+<p>
+My name is <strong>Katie</strong>, a passionate and reliable tutor who believes that every learner can succeed with the right guidance.
+I have over a year of teaching experience, including working at a crèche and serving as a Sunday School teacher.
+My approach focuses on understanding, confidence-building, and patience.
+</p>
+<p>
+I work closely with each learner to make learning enjoyable, structured, and effective.
+</p>
 </section>
 
 <section class="card">
-  <h2>Subjects & Grades</h2>
-  <p>All subjects covered for <strong>Grades 1 – 9</strong></p>
-  <p>Online and in-person sessions available</p>
+<h2>📚 Subjects & Grades</h2>
+<div class="subject-grid">
+  <div>📘 Mathematics</div>
+  <div>📗 English</div>
+  <div>📙 Natural Sciences</div>
+  <div>📕 Social Sciences</div>
+  <div>📓 Afrikaans</div>
+  <div>📔 All other school subjects</div>
+</div>
+<p><strong>Grades 1 – 9 | Online & In-Person</strong></p>
 </section>
 
 <section class="card">
-  <h2>Pricing</h2>
-  <ul>
-    <li><strong>Grades 1–6:</strong> R200 per week (2 × 1-hour sessions)</li>
-    <li><strong>Grades 7–9:</strong> R350 per week (2 × 1-hour sessions)</li>
-  </ul>
+<h2>💰 Pricing</h2>
+<ul>
+<li><strong>Grades 1–6:</strong> R200 per week (2 × 1-hour sessions)</li>
+<li><strong>Grades 7–9:</strong> R350 per week (2 × 1-hour sessions)</li>
+</ul>
 </section>
 
 <section class="card">
-  <h2>Location</h2>
-  <p>
-    <a href="https://www.google.com/maps/search/?api=1&query=6349+Monyaunya+Crescent+Birch+Acres+Kempton+Park+1619"
-       target="_blank">
-      6349 Monyaunya Crescent, Birch Acres, Kempton Park 1619
-    </a>
-  </p>
+<h2>📘 Study Materials</h2>
+<p>We provide structured learning support including:</p>
+<ul>
+<li>✔ Worksheets per grade & subject</li>
+<li>✔ Cue cards for key concepts</li>
+<li>✔ Revision activities</li>
+<li>✔ Exam preparation material</li>
+</ul>
+<p><em>(Downloadable resources coming soon)</em></p>
 </section>
 
 <section class="card">
-  <h2>Contact & Bookings</h2>
-  <p>📞 076 555 0926</p>
-  <p>📧 communityhub17@gmail.com</p>
-  <a class="btn" href="https://wa.me/27765550926">Book via WhatsApp</a>
+<h2>🌟 Parent & Learner Testimonials</h2>
+<div class="review">“Katie is patient and explains work very clearly. My child’s confidence improved.”</div>
+<div class="review">“Great tutor! Very reliable and always prepared.”</div>
+<div class="review">“Learning is fun and structured. Highly recommended.”</div>
 </section>
+
+<section class="card">
+<h2>✍️ Leave a Review</h2>
+<p>Parents and learners are welcome to share feedback.</p>
+<p><em>Online review form coming soon</em></p>
+</section>
+
+<section class="card">
+<h2>📍 Location</h2>
+<p>
+<a href="https://www.google.com/maps/search/?api=1&query=6349+Monyaunya+Crescent+Birch+Acres+Kempton+Park+1619" target="_blank">
+6349 Monyaunya Crescent, Birch Acres, Kempton Park 1619
+</a>
+</p>
+</section>
+
+<section class="card">
+<h2>📞 Book a Session</h2>
+<p>Call or WhatsApp: <strong>076 555 0926</strong></p>
+<p>Email: communityhub17@gmail.com</p>
+<a class="btn" href="https://wa.me/27765550926">Book on WhatsApp</a>
+</section>
+
+<section class="card">
+<h2>📱 Scan to Visit Website</h2>
+<p>(QR code will appear here)</p>
+</section>
+
+<footer>
+© Community Hub Tutoring • Empowering learners every day
+</footer>
 
 </body>
 </html>
