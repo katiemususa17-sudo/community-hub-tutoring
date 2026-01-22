@@ -4,73 +4,58 @@
 <meta charset="UTF-8">
 <title>Community Hub Tutoring</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
 body {
+  font-family: Arial, sans-serif;
   margin: 0;
-  font-family: 'Segoe UI', Arial, sans-serif;
   background: #f4f9ff;
   color: #333;
 }
-
 header {
-  background: linear-gradient(135deg, #5f9cff, #7ed6df);
+  background: #2c7be5;
   color: white;
+  padding: 20px;
   text-align: center;
-  padding: 30px 15px;
 }
-
-header img {
-  max-width: 180px;
-  margin-bottom: 10px;
-}
-
-section {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-}
-
-h2 {
-  color: #5f9cff;
-}
-
-.btn {
-  display: inline-block;
-  background: #25D366;
+nav a {
   color: white;
-  padding: 12px 20px;
+  margin: 0 10px;
   text-decoration: none;
-  border-radius: 25px;
   font-weight: bold;
 }
-
-.subject-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+section {
+  padding: 40px 20px;
 }
-
-.review {
-  background: #f0f6ff;
-  padding: 10px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-footer {
-  background: #eaf1ff;
+.hero {
+  background: linear-gradient(to right, #6f42c1, #2c7be5);
+  color: white;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  padding: 60px 20px;
+}
+.button {
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+footer {
+  background: #2c7be5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+img {
+  max-width: 150px;
+  border-radius: 10px;
 }
 </style>
 </head>
@@ -80,91 +65,62 @@ footer {
 <header>
   <img src="logo.png" alt="Community Hub Tutoring Logo">
   <h1>Community Hub Tutoring</h1>
-  <p>Helping learners grow with confidence & understanding</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#materials">Study Materials</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<section class="card">
-<h2>👩‍🏫 About the Tutor</h2>
-<img src="katie.jpeg" style="max-width:150px;border-radius:50%;">
-<p>
-My name is <strong>Katie</strong>, a passionate and reliable tutor who believes that every learner can succeed with the right guidance.
-I have over a year of teaching experience, including working at a crèche and serving as a Sunday School teacher.
-My approach focuses on understanding, confidence-building, and patience.
-</p>
-<p>
-I work closely with each learner to make learning enjoyable, structured, and effective.
-</p>
+<section class="hero">
+  <h2>CAPS-Aligned Tutoring for Grades 1–9</h2>
+  <p>Online & In-Person | All Subjects | Affordable & Reliable</p>
+  <a class="button" href="https://docs.google.com/forms/d/e/1FAIpQLSdEvzsBLAEs8isTH_vzWnAZJ2Q3LD19UOsURx7wZ4_9c6GlQQ/viewform">Book a Session</a>
+  <a class="button" href="https://wa.me/27765550926">WhatsApp Me</a>
 </section>
 
-<section class="card">
-<h2>📚 Subjects & Grades</h2>
-<div class="subject-grid">
-  <div>📘 Mathematics</div>
-  <div>📗 English</div>
-  <div>📙 Natural Sciences</div>
-  <div>📕 Social Sciences</div>
-  <div>📓 Afrikaans</div>
-  <div>📔 All other school subjects</div>
-</div>
-<p><strong>Grades 1 – 9 | Online & In-Person</strong></p>
+<section id="about">
+  <h2>About the Tutor</h2>
+  <img src="katie.jpeg" alt="Tutor Photo">
+  <p>
+    My name is Katie, and I am a passionate and reliable tutor with experience teaching learners from Grade 1 to Grade 9.
+    I have taught at a crèche and currently serve as a Sunday School teacher.
+    I focus on helping learners understand their work, build confidence, and succeed academically.
+  </p>
 </section>
 
-<section class="card">
-<h2>💰 Pricing</h2>
-<ul>
-<li><strong>Grades 1–6:</strong> R200 per week (2 × 1-hour sessions)</li>
-<li><strong>Grades 7–9:</strong> R350 per week (2 × 1-hour sessions)</li>
-</ul>
+<section id="services">
+  <h2>Services & Fees</h2>
+  <div class="card">
+    <strong>Grades 1–6:</strong> R200 per week (2 × 1-hour sessions)
+  </div>
+  <div class="card">
+    <strong>Grades 7–9:</strong> R350 per week (2 × 1-hour sessions)
+  </div>
+  <p>✔ Online Tutoring<br>✔ In-Person Tutoring<br>✔ All CAPS Subjects</p>
 </section>
 
-<section class="card">
-<h2>📘 Study Materials</h2>
-<p>We provide structured learning support including:</p>
-<ul>
-<li>✔ Worksheets per grade & subject</li>
-<li>✔ Cue cards for key concepts</li>
-<li>✔ Revision activities</li>
-<li>✔ Exam preparation material</li>
-</ul>
-<p><em>(Downloadable resources coming soon)</em></p>
+<section id="materials">
+  <h2>Study Materials (CAPS)</h2>
+  <p>Worksheets, notes, cue cards & revision packs for Grades 1–9.</p>
+  <p><em>PDF downloads coming soon.</em></p>
 </section>
 
-<section class="card">
-<h2>🌟 Parent & Learner Testimonials</h2>
-<div class="review">“Katie is patient and explains work very clearly. My child’s confidence improved.”</div>
-<div class="review">“Great tutor! Very reliable and always prepared.”</div>
-<div class="review">“Learning is fun and structured. Highly recommended.”</div>
-</section>
-
-<section class="card">
-<h2>✍️ Leave a Review</h2>
-<p>Parents and learners are welcome to share feedback.</p>
-<p><em>Online review form coming soon</em></p>
-</section>
-
-<section class="card">
-<h2>📍 Location</h2>
-<p>
-<a href="https://www.google.com/maps/search/?api=1&query=6349+Monyaunya+Crescent+Birch+Acres+Kempton+Park+1619" target="_blank">
-6349 Monyaunya Crescent, Birch Acres, Kempton Park 1619
-</a>
-</p>
-</section>
-
-<section class="card">
-<h2>📞 Book a Session</h2>
-<p>Call or WhatsApp: <strong>076 555 0926</strong></p>
-<p>Email: communityhub17@gmail.com</p>
-<a class="btn" href="https://wa.me/27765550926">Book on WhatsApp</a>
-</section>
-
-<section class="card">
-<h2>📱 Scan to Visit Website</h2>
-<p>(QR code will appear here)</p>
+<section id="contact">
+  <h2>Contact & Booking</h2>
+  <p><strong>Phone:</strong> <a href="tel:0765550926">076 555 0926</a></p>
+  <p><strong>Email:</strong> communityhub17@gmail.com</p>
+  <p>
+    <strong>Address:</strong><br>
+    <a href="https://www.google.com/maps/search/?api=1&query=6349+Monyaunya+Crescent+Birch+Acres+Kempton+Park+1619" target="_blank">
+      6349 Monyaunya Crescent, Birch Acres, Kempton Park 1619
+    </a>
+  </p>
 </section>
 
 <footer>
-© Community Hub Tutoring • Empowering learners every day
+  <p>© 2026 Community Hub Tutoring | Prepared by Katie</p>
 </footer>
 
 </body>
